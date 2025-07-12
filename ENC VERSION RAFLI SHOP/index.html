@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🚀RaflyShop - Jual VPS</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+
+  <!-- 🎉 Layar Sambutan Awal -->
+  <div id="sambutan-awal" class="fade-in" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center; padding: 20px;">
+    <h1 style="font-size: 2.8em; color: #00ffc3; text-shadow: 0 0 10px #00ffc3;">🚀 Selamat Datang di RaflyShop</h1>
+    <p style="font-size: 1.2em; color: #fff; max-width: 650px; margin-top: 20px;">
+      🔥 Platform terpercaya untuk kebutuhan VPS Anda.  
+      Harga bersahabat, performa terbaik, dan pelayanan yang cepat.  
+      <br><br>🌐 Mari mulai perjalanan digital Anda bersama <b>RaflyShop</b>!
+    </p>
+    <button onclick="mulaiToko()" style="margin-top: 35px; padding: 15px 40px; font-size: 1em; background: linear-gradient(90deg, #00ffc3, #00b2ff); color: #000; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; box-shadow: 0 0 10px #00ffc3;">🚀 Lanjutkan ke Toko</button>
+  </div>
+
+  <!-- 🔊 Musik Latar -->
+  <audio id="musik" src="music.mp3" loop></audio>
+
+  <!-- Landing -->
+  <section id="landing" class="fade-in" style="display:none">
+    <div class="landing-box">
+      <h1>Selamat Datang di <span style="color:#00ffc3">RaflyShop🚀📦💫</span></h1>
+      <p class="sambutan">Solusi cepat & terpercaya untuk kebutuhan VPS Anda. Harga Murah Terjangkau, Dan Performa Terjamin. 💻⚡</p>
+
+      <!-- Gambar Estetik VPS -->
+      <img src="https://files.catbox.moe/nooen3.gif" alt="CopyRight By Sandeva" style="max-width: 250px; margin: 20px auto; display: block; box-shadow: 0 0 15px #00ffc3; border-radius: 15px;"/>
+
+      <!-- Tombol Utama -->
+      <div style="margin: 25px 0;">
+        <button onclick="showProductPage()" style="padding: 15px 35px; font-size: 1.1rem; background: linear-gradient(135deg, #00ffc3, #00b2ff); border-radius: 12px; border: none; color: black; font-weight: bold; cursor: pointer; box-shadow: 0 0 10px #00ffc3;">
+          💫 AYO MULAI MEMBELI 😁
+        </button>
+      </div>
+
+      <!-- Tombol Tambahan -->
+      <div class="btn-group" style="flex-direction: column; gap: 12px;">
+        <button onclick="window.open('https://whatsapp.com/channel/0029Vb99TwlBfxoB0CPVbO3m', '_blank')">✅ TESTIMONI ✅</button>
+        <button onclick="formLihatRiwayat()">📦 LIHAT RIWAYAT 📦</button>
+        <!-- Tombol Join Channel WhatsApp -->
+<button class="join-wa" onclick="window.open('https://whatsapp.com/channel/0029Vb4z3qTISTkMxvTRQM3G', '_blank')">
+  📢 JOIN CHANNEL WHATSAPP 📢
+</button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Produk -->
+  <section id="produk" style="display:none" class="fade-in">
+    <div class="judul-box">
+      <h2>📦 SILAHKAN PILIH VPS ANDA 🚀</h2>
+    </div>
+    <div id="produk-container"></div>
+    <div style="text-align:center;">
+      <button class="btn-kembali" onclick="kembaliKeLanding()">🔙 KEMBALI</button>
+    </div>
+  </section>
+
+  <!-- Form Pemesanan -->
+  <section id="form-pesan" style="display:none" class="fade-in">
+    <div class="form-box">
+      <div id="form-content"></div>
+      <button class="btn-kembali" onclick="kembaliKeLanding()">🔙 KEMBALI</button>
+    </div>
+  </section>
+
+  <!-- Pembayaran -->
+  <section id="pembayaran" style="display:none" class="fade-in">
+    <div class="form-box">
+      <div id="payment-content"></div>
+      <button class="btn-kembali" onclick="kembaliKeLanding()">🔙 KEMBALI</button>
+    </div>
+  </section>
+
+  <!-- Riwayat -->
+  <section id="riwayat" style="display:none" class="fade-in">
+    <div class="judul-box">
+      <h2>📜 RIWAYAT PEMESANAN ANDA</h2>
+    </div>
+    <div id="riwayat-container"></div>
+    <div style="text-align:center;">
+      <button class="btn-kembali" onclick="kembaliKeLanding()">🔙 KEMBALI</button>
+    </div>
+  </section>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+  <script>
+    function mulaiToko() {
+      document.getElementById("sambutan-awal").style.display = "none";
+      document.getElementById("landing").style.display = "flex";
+
+      const musik = document.getElementById("musik");
+      musik.play().catch(() => {
+        alert("Klik tombol ini lagi untuk memulai musik. Browser memblokir autoplay.");
+      });
+    }
+  </script>
+</body>
+</html>

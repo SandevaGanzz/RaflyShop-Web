@@ -1,0 +1,310 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://files.catbox.moe/qfg8ts.gif') no-repeat center center fixed;
+  background-size: cover;
+  color: #e8ffff;
+  backdrop-filter: blur(2px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  text-align: center;
+  text-shadow: 0 0 10px #00fff2;
+  color: #00fff2;
+  letter-spacing: 1px;
+}
+
+/* === SAMBUTAN AWAL === */
+#sambutan-awal {
+  height: 100vh;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#sambutan-awal h1 {
+  font-size: 2.5rem;
+  color: #00ffc3;
+  text-shadow: 0 0 15px #00fff2;
+  margin-bottom: 20px;
+}
+
+#sambutan-awal p {
+  font-size: 1.1rem;
+  color: #ccffff;
+  max-width: 650px;
+  line-height: 1.6;
+  text-shadow: 0 0 8px #00fff2;
+}
+
+#sambutan-awal button {
+  margin-top: 30px;
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, #00fff2, #00ffa1);
+  color: black;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 255, 195, 0.7);
+  transition: all 0.3s ease;
+}
+
+#sambutan-awal button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 195, 0.9);
+}
+
+.judul-box {
+  background: rgba(0, 0, 0, 0.6);
+  border-left: 5px solid #00ffc3;
+  padding: 16px 24px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 90%;
+  box-shadow: 0 0 15px rgba(0, 255, 195, 0.3);
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.judul-box h2 {
+  margin: 0;
+  color: #00ffc3;
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px #00fff2;
+}
+
+/* === LANDING === */
+#landing {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  padding: 1rem;
+}
+
+.landing-box {
+  text-align: center;
+  padding: 2.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  max-width: 600px;
+  width: 100%;
+}
+
+.sambutan {
+  font-size: 1.1rem;
+  color: #ccffff;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  text-shadow: 0 0 6px #00fff2;
+  line-height: 1.5;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-group button {
+  margin: 6px 0;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #00f2ff, #00ff87);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00ffc3;
+  width: 100%;
+  max-width: 280px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn-group button img {
+  height: 26px;
+  margin-right: 6px;
+}
+
+.btn-group button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00fff2;
+}
+
+/* === TOMBOL JOIN WA === */
+.btn-group .join-wa {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: white;
+  box-shadow: 0 0 10px #25d366;
+}
+
+.btn-group .join-wa:hover {
+  box-shadow: 0 0 20px #25d366;
+  transform: scale(1.05);
+}
+
+/* === FORM TAMBAHAN === */
+.form-box {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  max-width: 600px;
+  margin: auto;
+  color: #e8ffff;
+  text-align: left;
+}
+
+.form-box h3 {
+  color: #00ffc3;
+  text-shadow: 0 0 8px #00fff2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-box img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00ffc3;
+}
+
+/* === TAMBAHAN: GAYA GAMBAR DI UCAPAN TERIMA KASIH === */
+.form-box .bukti-terima-kasih {
+  max-width: 250px;
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00ffc3;
+}
+
+.form-box input,
+.form-box select,
+.form-box button {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.form-box input,
+.form-box select {
+  background: #111;
+  color: #ccffff;
+  box-shadow: inset 0 0 8px #00ffc3;
+}
+
+.form-box input:focus,
+.form-box select:focus {
+  outline: none;
+  box-shadow: 0 0 12px #00ffc3;
+}
+
+.form-box button {
+  background: linear-gradient(135deg, #00ffc3, #00b2ff);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px #00fff2;
+}
+
+.form-box button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00fff2;
+}
+
+/* === GAYA BENEFIT LIST === */
+.vps-card .benefit-list {
+  text-align: left;
+  margin: 10px auto;
+  padding-left: 20px;
+  font-size: 0.95em;
+  color: #aef;
+  list-style-type: disc;
+  line-height: 1.4;
+}
+
+.benefit-item {
+  font-size: 14px;
+  margin: 2px 0;
+  padding-left: 16px;
+  list-style: disc;
+  text-align: left;
+}
+
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+  .landing-box {
+    padding: 1.5rem;
+  }
+
+  .btn-group button {
+    width: 100%;
+    margin: 6px 0;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  #produk-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card-content button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  #sambutan-awal h1 {
+    font-size: 2rem;
+  }
+
+  #sambutan-awal p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  #sambutan-awal button {
+    font-size: 0.95rem;
+    padding: 12px 25px;
+  }
+
+  .form-box {
+    padding: 1rem;
+  }
+
+  .judul-box {
+    padding: 12px 18px;
+  }
+
+  .form-box img,
+  .form-box .bukti-terima-kasih {
+    max-width: 100%;
+  }
+}
